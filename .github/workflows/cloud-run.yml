@@ -38,4 +38,5 @@ jobs:
           --quiet \
           --region "$RUN_REGION" \
           --image "gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA" \
+          --no-allow-unauthenticated \
           --platform "managed"
